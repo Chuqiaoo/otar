@@ -2,7 +2,7 @@
   "name": "otar",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitname.github.io/otar-gh-pages",
+  "homepage": "https://gitname.github.io/otar",
   "type": "module",
   "scripts": {
     "dev": "vite",
