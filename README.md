@@ -1,6 +1,6 @@
 # 🧬 Gene associated with lung carcinoma
 
-It is a simple React web application to list top 10 gene associated with lung carcinoma. It provides two different data score visualization, which can be viewed by clicking the arrow-down icon charts of data score when clicking the arrow-down icon.
+A simple React web application to list top 10 gene associated with lung carcinoma. It provides two different data score visualization charts when clicking the arrow-down icon.
 
 ## 🦋 Demo
 
