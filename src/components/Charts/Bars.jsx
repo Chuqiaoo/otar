@@ -2,6 +2,7 @@ import React from 'react';
 import {BarChart} from '@mui/x-charts/BarChart';
 import {Typography} from "@mui/material";
 import {formatId} from "../Helpers/help.jsx";
+import {axisClasses} from "@mui/x-charts";
 
 
 function Bars({data}) {
@@ -26,10 +27,17 @@ function Bars({data}) {
                         tickNumber: 5, // custom tick value
                         valueFormatter: (value) => value.toFixed(3),
                         label: 'Association Score',
-                        labelSytle: {paddingRight: 5}
                     },
                 ]}
                 height={300}
+                sx={{
+                    [`.${axisClasses.left} .${axisClasses.label}`]: {
+                        transform: 'translate(-20px, 0)', // applies to X axis labels for spacing
+                    },
+                    [`.${axisClasses.bottom} .${axisClasses.label}`]: {
+                        transform: 'translate(0, 10px)',
+                    },
+                }}
             />
         </div>
 
