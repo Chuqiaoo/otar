@@ -51,10 +51,11 @@ function TabPanel(props) {
             hidden={value !== index} // hides content if not active
             id={`full-width-tabpanel-${index}`}
             aria-labelledby={`full-width-tab-${index}`}
+            style={{display: 'flex', justifyContent: 'center'}}
             {...other}
         >
             {value === index && (  // render when active
-                <Box sx={{p: 3}}>
+                <Box sx={{p: 3}} style={{width: '50%'}}>
                     {children}
                 </Box>
             )}
